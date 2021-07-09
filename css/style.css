@@ -20,75 +20,36 @@ color:#000;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.store-body {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
+.logo-container{
+	justify-content:center;
+	align-items:center;
 }
-
-.store-body .product-info {
-  width: 60%;
-  border-right: 1px solid rgba(0,0,0,.125); 
+.logo-container a{
+	text-decoration:none;
 }
-
-.store-body .product-payment-details {
-  width: 40%;
-  padding: 15px 15px 0 15px;
+.logo-container .logo-img{
+	width:auto;
+	height:auto;
 }
-
-.product-info .product-gallery {
-  display: flex;
-  flex-direction: row;
-  border-bottom: 1px solid rgba(0,0,0,.125);
+.logo-container .logo-img img{
+	width:85px;
+	height:85px;
+	border-radius:50%;
+	border: 2px solid #dcdcdc;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 35%), 0 0 20px 0 rgb(0 0 0 / 15%);
 }
-
-.product-gallery-featured {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 15px 0;
-  cursor: zoom-in;
+.logo-container .logo-text{
+	color:#000;
+	font-size:26px;
+	font-weight:bold;
+	text-transform:uppercase;
+	text-shadow: 2px 2px #fff;
+	
 }
-
-.product-gallery-thumbnails .thumbnails-list li {
-  margin-bottom: 5px;
-  cursor: pointer;
-  position: relative;
-  width: 70px;
-  height: 70px;
-}
-
-.thumbnails-list li img {
-  display: block;
-  width: 100%;
-}
-
-.product-gallery-thumbnails .thumbnails-list li:hover::before {
-  content: "";
-  width: 3px;
-  height: 100%;
-  background: #007bff;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.product-info .product-seller-recommended {
-  padding: 20px 20px 0 20px;
-}
-
-.product-comments textarea {
-  height: 50px;
-}
-
-.last-questions-list li {
-  margin-bottom: 20px;
-}
-
-.last-questions-list li span {
-  padding-left: 10px;
+.logo-text-mobile{
+	font-size:22px;
+	color:#fff;
+	display:none;
 }
 #navigation-bar{
 	display:flex;
@@ -222,7 +183,7 @@ margin-bottom:25px;
 	margin-top:25px;
 }
 .pd-top{
-	padding-top:40px;
+	padding-top:25px;
 }
 .more-button{
 	text-transform:uppercase;
@@ -507,7 +468,18 @@ margin:10px 0px;
     color: rgba(0,0,0,.5);
     border-color: rgba(0,0,0,.0) !important;
 }
-
+.logo-container{
+	justify-content:center;
+	align-items:center;
+	display:none;
+}
+.logo-text-mobile{
+	font-size:22px;
+	color:#fff;
+	display:block;
+	text-transform:uppercase;
+	font-weight: 600;
+}
 }
 .p-4 {
     padding: 0px !important;
@@ -622,6 +594,10 @@ margin:10px 0px;
 	width:auto;
 	background:#3F3F3F;
 }
+.logo-text-mobile{
+	font-size:18px;
+	font-weight: 600;
+}
 .bottom-logo{
 display: flex;
 align-items: center;
@@ -714,6 +690,24 @@ color:#919191;
 }
 .bottom-line{
 	display:none;
+}
+}
+@media (max-width: 420px) {
+.logo-text-mobile{
+	font-size:16px;
+	font-weight: 600;
+}
+}
+@media (max-width: 375px) {
+	.logo-text-mobile{
+	font-size:14px;
+	font-weight: 600;
+}
+}
+@media (max-width: 340px) {
+	.logo-text-mobile{
+	font-size:12px;
+	font-weight: 600;
 }
 }
 @media (min-width: 992px){
