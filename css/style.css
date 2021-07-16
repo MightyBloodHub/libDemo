@@ -457,6 +457,105 @@ margin:10px 0px;
     transform: rotate(-135deg);
     opacity: 0.9;
 }
+.auto-height {
+    height: 100vh !important;
+}
+.login-right-section {
+    width: auto;
+    background: #171c26;
+}
+.logo-vidtext {
+    text-align: center;
+    font-weight: bold;
+    font-size: 26px;
+    color: #9e9e9e;
+    letter-spacing: 1.8px;
+    padding-top: 20px;
+}
+.form-container {
+    width: 100%;
+}
+.nav-content-area {
+    margin-top: 20%;
+}
+.nav-content-area ul {
+    margin:0px;
+	padding:0px;
+	list-style:none;
+}
+.nav-content-area ul li {
+   text-align:center;
+}
+.nav-content-area ul li a {
+   text-align:center;
+   font-family: nunito,arial,sans-serif;
+   font-size:15px;
+   background:#ad0000;
+   color:#fff;
+   width:100%;
+   float:left;
+   padding:7px 0px;
+    margin: 5px 0px;
+	text-decoration:none;
+}
+.logo-inner-container{
+	text-align:center;
+	margin-top: 10px;
+}
+
+.logo-inner-container .logo-img {
+    width: auto;
+    height: auto;
+}
+.logo-inner-container .logo-img img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 2px solid #dcdcdc;
+    box-shadow: 0 5px 5px 0 rgb(0 0 0 / 35%), 0 0 20px 0 rgb(0 0 0 / 15%)
+}
+.logo-inner-container .logo-text {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: nunito,arial,sans-serif;
+}
+.logo-inner-container .logo-text:hover {
+    text-decoration:none;
+}
+.logo-inner-container a {
+    text-decoration: none;
+}
+.book-cover{
+	padding:15px;
+	text-align:center;
+}
+.book-cover .book-pic{
+	width:100%;
+	margin-top: 20px;
+    float: left;
+}
+.book-cover .book-pic img{
+	max-width: 250px;
+	width:100%;
+    border-radius: 10px;
+    border: 1px solid #9c9c9c;
+    padding: 2px;
+}
+.book-cover .book-title{
+	color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: nunito,arial,sans-serif;
+    margin-top: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 @media (max-width: 1024px) {
  .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: .2rem !important;
