@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en" class="h-100>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>::Book::</title>
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1.0;" />
+<meta name="description" content="" />
+<meta name="language" content="English" />
+<meta name="distribution" content="Global" />
+
+<!--<link rel="shortcut icon" href="images/logo.png" />-->
+
+<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="css/style.css" />
+<link type="text/css" rel="stylesheet" href="css/font-awesome.min.css" />
+ <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+
+</head>
+<body class="h-100">
+<div class="col-lg-12 h-100">
+		<div class="row">
+         <div class="col-md-3 col-12">
+				<div class="row auto-height-1 login-right-section">
+					<div class="form-container">
+						<div class="logo-inner-container">
+<a href="index.html">
+<div class="logo-img"><img src="images/logo.jpg"></div>
+<div class="logo-text">Adnan Al Othman Library</div>
+</a></div>
+						<div class="nav-content-area">
+							<button class="nav-but"><a href="index.html">Home</a></button>
+
+						</div>
+						<div class="book-cover">
+						<div class="book-pic">
+						<img src="images/madarsatulothman.jpg" class="img-fluid"></div>
+						<div class="book-title">Madarsa Al Othman</div>
+						</div>
+						
+					</div>
+
+				</div>
+			</div>
+			<div class="col-md-9 col-12">
+				<div class="row auto-height justify-content-center align-items-center login-left-section">
+                   <iframe width="100%" height="100%" src="https://vibrant-montalcini-d510c0.netlify.app/books/madarsatulothman/index.html" title="" frameborder="0">
+</iframe>
+				</div>
+			</div>
+
+			
+		</div>
+	</div>
+</div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+$(document).ready(function () {
+
+    $('.navbar .dropdown-item').on('click', function (e) {
+        var $el = $(this).children('.dropdown-toggle');
+        var $parent = $el.offsetParent(".dropdown-menu");
+        $(this).parent("li").toggleClass('open');
+
+        if (!$parent.parent().hasClass('navbar-nav')) {
+            if ($parent.hasClass('show')) {
+                $parent.removeClass('show');
+                $el.next().removeClass('show');
+                $el.next().css({"top": -999, "left": -999});
+            } else {
+                $parent.parent().find('.show').removeClass('show');
+                $parent.addClass('show');
+                $el.next().addClass('show');
+                $el.next().css({"top": $el[0].offsetTop, "left": $parent.outerWidth() - 4});
+            }
+            e.preventDefault();
+            e.stopPropagation();
+        }
+    });
+
+    $('.navbar .dropdown').on('hidden.bs.dropdown', function () {
+        $(this).find('li.dropdown').removeClass('show open');
+        $(this).find('ul.dropdown-menu').removeClass('show open');
+    });
+
+});
+
+</script>
+</html>
